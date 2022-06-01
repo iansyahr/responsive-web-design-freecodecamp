@@ -1,0 +1,336 @@
+new responsive web design course
+
+5 : gua belajar tentang <main>
+6 : belajar tentang identasi agar si si child element (h2,p,dll) bisa ketahuan kalo mereka child dari parent element <main>
+
+7: belajar tambahin elemen <img>.. element img gak usah pakai close tag "</img>"
+
+8 : belajar tambahin html attributes di element img 
+ex +> <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg">
+
+9 : belajar tambahin atribut alt, alt dipakai buat improve aksebilitas screen reader dan textnya akan muncul kalau gambar dari <img> gagal memuat
+ex => <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back">
+
+10 : belajar tentang hyperlink text
+ex => <a href='https://freecatphotoapp.com'></a>
+
+11: sama kayak step 10, tapi tambahin text di anchornya
+ex => <a href="https://freecatphotoapp.com">cat photos</a>
+
+12 :  <p>Click here to view more <a href="https://freecatphotoapp.com">cat photos</a>.</p>
+
+13 : bikin atribut baru "target" biar bisa new tab browser
+ex => <p>Click here to view more <a target=_blank href="https://freecatphotoapp.com">cat photos</a>.</p>
+
+14 : jadinya gua bisa bikin link dengan gambar.. tidak hanya pakai text saja
+ex => <a target="_blank" href="https://freecatphotoapp.com"> <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."> </a>
+
+15 : sebelum gua nambahin konten baru lagi.. gua seharusnya bikin element section di dalam elemen main
+ex =>
+<main>
+      <section>
+        <h2>Cat Photos</h2>
+      <!-- TODO: Add link to cat photos -->
+      <p>Click here to view more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>.</p>
+      <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </section>
+    </main>
+
+16 : bikin element section yang kedua
+17 : gua bikin elemen h2 di section ke dua
+18 : Saat Anda menambahkan elemen heading peringkat lebih rendah ke halaman, itu berarti Anda memulai subbagian baru.
+berarti mungkin maksudnya h2,h3,h4 blabal
+ex =>
+<section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+      </section>
+
+19 : elemen baru.. yaitu <ul> atau unordered list
+ex =>
+<h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul></ul>
+
+20 : elemen baru.. yaitu <li> atau list item
+ex=>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+
+21 : gua bikin element image baru lagi.. tapi pake gambar lasagna
+ex=>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+
+22 : Gunakan elemen <figure> untuk menandai foto dalam dokumen
+Elemen figure mewakili konten mandiri dan akan memungkinkan Anda untuk mengaitkan gambar dengan keterangan.
+ex punya w3school => https://www.w3schools.com/tags/tag_figure.asp
+<figure>
+  <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure
+
+ex => 
+       <figure><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate."></figure>
+
+23 : tambahin element <figcaption> di dalam <figure>
+ex => 
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Cats love lasagna.</figcaption>
+        </figure>
+
+24: masukkan emphasis pada teks, biar garisnya miring
+ex => <figcaption>Cats <em>love</em> lasagna.</figcaption>
+
+25: tambahin element h3 baru untuk masukkin bab baru
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+
+26: Kode untuk daftar yang diurutkan <ol> mirip dengan daftar yang tidak diurutkan <ul>, tetapi item daftar dalam daftar yang diurutkan diberi nomor saat ditampilkan.
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+
+27: bikin figure baru lagi
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure></figure>
+
+28: masukkin element img lagi
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg">
+        </figure>
+
+29: masukkin alt kedalam element img
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+
+30: masukkan figcaption
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Cats hate other cats</figcaption>
+
+31: bungkus kata "hate" pada figcaption dengan <strong> biar tulisannya tebal
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+
+32: bikin section baru lagi
+
+33 : bikin element h2 didalam section
+      <section>
+        <h2>Cat Form</h2>
+      </section>
+
+34 : element baru.. yaitu <form>, kayaknya ini buat bikin form gitu gitu
+        <h2>Cat Form</h2>
+        <form></form>
+
+35: The action attribute indicates where form data should be sent. For example, <form action="/submit-url"></form> tells the browser that the form data should be sent to the path /submit-url.
+jadinya atrib action untuk element form bikin kayak semacam inisiasi buat data yang dimasukkan harus dikirim ke mana gitu
+
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+        </form>
+
+36: masukkin tag <input>.. gak usah pakai closing
+        <form action="https://freecatphotoapp.com/submit-cat-photo"> 
+        <input>
+        </form>
+
+37: There are many kinds of inputs you can create using the type attribute. You can easily create a password field, reset button, or a control to let users select a file from their computer. 
+
+          <input type="text">
+
+38 : In order for a form's data to be accessed by the location specified in the action attribute, you must give the text field a name attribute and assign it a value to represent the data being submitted. For example, you could use the following syntax for an email address text field: <input type="text" name="email">.
+
+          <input type="text" name="catphotourl">
+
+39: Placeholder text is used to give people a hint about what kind of information to enter into an input. For example, <input type="text" placeholder="Email address">.
+          <input type="text" name="catphotourl" placeholder="cat photo url">
+
+40: To prevent a user from submitting your form when required information is missing, you need to add the required attribute to an input element. There's no need to set a value to the required attribute. Instead, just add the word required to the input element, making sure there is space between it and other attributes.
+
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+
+41 : Use the button element to create a clickable button. For example, <button>Click Here</button> creates a button with the text Click Here.
+
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          <button>Submit</button>
+
+42 : Even though you added your button below the text input, they appear next to each other on the page. That's because >>both input and button elements are inline elements, which don't appear on new lines<<
+You learned previously that the button submits the form by default, but you can explicitly add the type attribute with the value submit to make it clearer. Go ahead and do this to specify where this button should submit the form.
+
+          <button type="submit">Submit</button>
+
+43 : You can use "radio" buttons for questions where you want only one answer out of multiple options.
+Here is an example of a radio button with the option of cat: <input type="radio"> cat. Remember that input elements are self-closing.
+Jadinya kayak ada tombol "bulat" buat option gitu
+
+          <input type="radio"> Indoor
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+
+44 : label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers). For example, <label><input type="radio"> cat</label> makes it so clicking the word cat also selects the corresponding radio button.
+jadi kalo lu bungkus tombol radio dengan label.. tulisan yang ada di dalam input juga bisa diklik
+
+          <label><input type="radio"> Indoor</label>
+
+45 : The id attribute is used to identify specific HTML elements. Each id attribute's value must be unique from all other id values for the entire page.
+          <label><input type="radio" id="indoor"> Indoor</label>
+
+46 : cuman bikin tombol radio yang baru
+
+          <label><input id="indoor" type="radio"> Indoor</label>
+          <label><input id="outdoor" type="radio"> Outdoor</label>
+
+47 : Notice that both radio buttons can be selected at the same time. To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value.
+
+Jadi kalo kita gak pake attribute "name".. kedua tombol radio bisa di select secara bersamaan, jadinya bisa bisa di select bergantian.. harus pakai attribute "name"
+
+          <label><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
+          <label><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label>
+
+48 : If you select the Indoor radio button and submit the form, the form data for the button is based on its name and value attributes. Since your radio buttons do not have a value attribute, the form data will include indoor-outdoor=on, which is not useful when you have multiple buttons.
+
+misalkan kita select tombol radio "Indoor" dan submit formnya, data dari tombolnya akan berdasarkan attrib name dan value..
+nah karena barusan kita gak punya attrib value.. data formnya nanti masukkin data indoor dan outdoor secara bersamaan.. jadinya gak guna kalo kita punya multiple button
+
+          <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+          <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+
+49 : The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line.
+
+Jadinya 
+The <fieldset> tag is used to group related elements in a form.
+The <fieldset> tag draws a box around the related elements.
+
+          <fieldset>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+
+50 : The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form.
+
+jadinya si element legend ini bisa jadi kayak caption untuk multiple pilihan yang ada di dalam fieldset element
+
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+
+51 : bikin element fieldset baru dibawah element fieldset barusan
+
+52 : masukkin element legend di dalam fieldset yang baru
+
+          <fieldset>
+            <legend>What's your cat's personality</legend>
+          </fieldset>
+53 : Forms commonly use checkboxes for questions that may have more than one answer. For example, here's a checkbox with the option of tacos: <input type="checkbox"> tacos.
+
+form biasanya pakai "checkbox" untuk pertanyaan yang mungkin harus dijawab lebih dari 1 jawaban
+
+            <legend>What's your cat's personality?</legend>
+            <input type="checkbox"> Loving
+
+54 : tambahin attrib "id"
+            <input type="checkbox" id="loving"> Loving
+
+55 : There's another way to associate an input element's text with the element itself. You can nest the text within a label element and add a for attribute with the same value as the input element's id attribute.
+
+Jadinya ini mirip dengan step 44.. text si inputnya bisa diklik.. bedanya di step 44.. element input dibungkus dengan label, nah kalo ini labelnya dibungkus dengan input dengan tambahan attrib "for" yang nilainya disamakan dengan nilai "id" element input
+
+            <input id="loving" type="checkbox"> <label for="loving">Loving</label>
+56 : Add the name attribute with the value personality to the checkbox input element.
+
+While you won't notice this in the browser, doing this makes it easier for a server to process your web form, especially when there are multiple checkboxes.
+
+            <input id="loving" type="checkbox" name="personality"> <label for="loving">Loving</label>
+
+57 : Masukkin checkbox baru lagi
+            <input id="loving" type="checkbox" name="personality"> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality"> <label for="lazy">Lazy</label>
+
+58 : Bikin checkbox baru lagi
+            <input id="loving" type="checkbox" name="personality"> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality"> <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality"> <label for="energetic">Energetic</label>
+
+
+59 : Like radio buttons, form data for selected checkboxes are name / value attribute pairs. While the value attribute is optional, it's best practice to include it with any checkboxes or radio buttons on the page.
+
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving"> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic"> Energetic</label>
+          </fieldset>
+
+60 : In order to make a checkbox checked or radio button selected by default, you need to add the checked attribute to it. There's no need to set a value to the checked attribute. Instead, just add the word checked to the input element, making sure there is space between it and other attributes.
+
+Make the first radio button and the first checkbox selected by default.
+
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic"> Energetic</label>
+          </fieldset>
+
+61 : Tambahin element <footer> dibawah element <main>
+    </main>
+    <footer></footer>
+  </body>
+</html>
+
+62 : tambahin element <p> di dalam element footer
+    <footer>
+      <p>No Copyright - freeCodeCamp.org</p>
+    </footer>
+
+63 : Masukkan hyperlink freecodecamp dengan element <a>
+
+        No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+
+64 : masukkan element <head> diatas element <body>
+
+65 : masukkan title di dalam element head
+
+  <head>
+    <title>CatPhotoApp</title>
+  </head>
+
+66 : Masukkan attrib lang di dalam element html
+<html lang="en">
+
+67: All pages should begin with <!DOCTYPE html>. This special string is known as a declaration and ensures the browser tries to meet industry-wide specifications.
+
+To complete this project, add this declaration as the first line of the code.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CatPhotoApp</title>
+  </head>
